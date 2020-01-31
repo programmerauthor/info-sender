@@ -25,10 +25,10 @@ async function refresh(){
             let info = infos[i];
             //从新数据中对比逐个插入，直到发现已插入的数据为止. id 作为标记依据
             if(info.id > doc.id){
-                //新数据
-                newArr.push(info);
                 //存入数据库
                 await db.insert(info);
+                //新数据
+                newArr.push(info);
             }
         }
     }else{
