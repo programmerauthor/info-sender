@@ -134,6 +134,8 @@ const emails = [
 
 ## 如何部署
 
+[项目源码地址](https://github.com/programmerauthor/info-sender)
+
 配置好邮箱以后，部署非常的简单。
 ```
 1. git clone 项目到本地，并进入项目根路径
