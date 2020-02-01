@@ -27,8 +27,12 @@ async function refresh(){
             if(info.id > doc.id){
                 //存入数据库
                 await db.insert(info);
-                //新数据
-                newArr.push(info);
+                if(info.title != doc.title){
+                    //新数据
+                    newArr.push(info);
+                }else{
+                    console.log(`同一条信息id发生变更:${info.id} vs ${doc.id}`);
+                }
             }
         }
     }else{
