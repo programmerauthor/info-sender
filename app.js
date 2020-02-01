@@ -14,7 +14,7 @@ async function refresh(){
     //时间排序找到最后一个
     let docs = await db.findAndSort({
         sortQuery:{
-            createTime:-1
+            id:-1
         },
         limit:1
     });
