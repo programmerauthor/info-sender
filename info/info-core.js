@@ -24,7 +24,7 @@ async function get(url){
 
 async function getInfos(){
     let full = await get(baseUrl);
-    return full['getTimelineService'];
+    return full['getTimelineService1'];
 }
 
 
